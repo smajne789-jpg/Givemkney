@@ -170,7 +170,6 @@ def main():
     app.add_handler(CallbackQueryHandler(list_giveaways, pattern="list"))
     app.add_handler(CallbackQueryHandler(view_giveaway, pattern="view_"))
     app.add_handler(CallbackQueryHandler(join, pattern="join_"))
-    app.add_handler(CallbackQueryHandler(end_giveaway, pattern="end_"))  # 👈 ВСТАВЬ СЮДА
     app.add_handler(CallbackQueryHandler(need_sub_yes, pattern="need_sub_yes"))
     app.add_handler(CallbackQueryHandler(need_sub_no, pattern="need_sub_no"))
     app.add_handler(MessageHandler(filters.TEXT, handle_admin))
